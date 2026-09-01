@@ -4,7 +4,7 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="scroll-mt-20 py-16 sm:py-20"
+      className="scroll-mt-20 py-12 sm:py-16"
       aria-labelledby="contact-title"
     >
       <p className="mb-2 font-mono text-xs text-accent">// get in touch</p>

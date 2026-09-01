@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="scroll-mt-20 border-b border-border pt-10 pb-20 sm:pt-14 sm:pb-28"
+      className="scroll-mt-20 border-b border-border pt-10 pb-14 sm:pt-14 sm:pb-20"
       aria-labelledby="hero-title"
     >
       <p className="mb-5 font-mono text-xs text-accent">// portfolio/index</p>

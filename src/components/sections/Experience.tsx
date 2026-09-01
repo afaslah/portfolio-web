@@ -13,7 +13,7 @@ export function Experience() {
   return (
     <section
       id="experience"
-      className="scroll-mt-20 border-b border-border py-16 sm:py-20"
+      className="scroll-mt-20 border-b border-border py-12 sm:py-16"
       aria-labelledby="experience-title"
     >
       <div className="mb-8">

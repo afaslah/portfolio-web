@@ -11,7 +11,7 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="scroll-mt-20 border-b border-border py-16 sm:py-20"
+      className="scroll-mt-20 border-b border-border py-12 sm:py-16"
       aria-labelledby="projects-title"
     >
       <div className="mb-8">
