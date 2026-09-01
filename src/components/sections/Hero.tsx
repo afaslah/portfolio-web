@@ -32,17 +32,19 @@ export function Hero() {
           </a>
         ))}
       </div>
-      <div className="mt-14 grid max-w-3xl gap-5 border-t border-border pt-5 sm:grid-cols-2 lg:grid-cols-4">
-        {skillGroups.map((group) => (
-          <div key={group.label}>
-            <p className="mb-2 font-mono text-xs text-muted">{group.label}</p>
-            <div className="flex flex-wrap gap-x-3 gap-y-1">
-              {group.skills.map((skill) => (
-                <Badge key={skill}>{skill}</Badge>
-              ))}
+      <div className="mt-14 border-t border-border pt-5">
+        <div className="grid max-w-3xl gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {skillGroups.map((group) => (
+            <div key={group.label}>
+              <p className="mb-2 font-mono text-xs text-muted">{group.label}</p>
+              <div className="flex flex-wrap gap-x-3 gap-y-1">
+                {group.skills.map((skill) => (
+                  <Badge key={skill}>{skill}</Badge>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -1,17 +1,12 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { projects } from "../../data/projects";
-import type { Project } from "../../types";
+import { ImagePreview } from "../ui/ImagePreview";
 
 export function Projects() {
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-  const dialogRef = useRef<HTMLDialogElement>(null);
-
-  useEffect(() => {
-    const dialog = dialogRef.current;
-    if (dialog && selectedProject && !dialog.open) dialog.showModal();
-  }, [selectedProject]);
-
-  const closePreview = () => dialogRef.current?.close();
+  const [preview, setPreview] = useState<{
+    title: string;
+    index: number;
+  } | null>(null);
 
   return (
     <section
@@ -48,7 +43,7 @@ export function Projects() {
                   type="button"
                   className="group mb-5 block aspect-[16/8] w-full cursor-zoom-in bg-border/20 p-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
                   aria-label={`Open full-size preview of ${project.title}`}
-                  onClick={() => setSelectedProject(project)}
+                  onClick={() => setPreview({ title: project.title, index: 0 })}
                 >
                   <img
                     src={project.imagePath}
@@ -86,39 +81,15 @@ export function Projects() {
           </article>
         ))}
       </div>
-      {selectedProject && (
-        <dialog
-          ref={dialogRef}
-          aria-labelledby="project-preview-title"
-          className="fixed inset-0 m-0 h-full w-full max-h-none max-w-none border-0 bg-transparent p-4 backdrop:bg-black/40"
-          onClose={() => setSelectedProject(null)}
-        >
-          <div
-            className="flex h-full items-center justify-center"
-            onClick={(event) => {
-              if (event.target === event.currentTarget) closePreview();
-            }}
-          >
-            <figure className="relative max-h-[85vh] max-w-[90vw] border border-border bg-bg p-2 shadow-2xl">
-              <figcaption id="project-preview-title" className="sr-only">
-                {selectedProject.title} image preview
-              </figcaption>
-              <button
-                type="button"
-                className="absolute right-3 top-3 z-10 inline-flex h-8 w-8 items-center justify-center border border-border bg-bg text-lg text-text transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-                aria-label="Close image preview"
-                onClick={closePreview}
-              >
-                X
-              </button>
-              <img
-                src={selectedProject.imagePath}
-                alt={`${selectedProject.title} full-size screenshot`}
-                className="block max-h-[80vh] max-w-[86vw] object-contain"
-              />
-            </figure>
-          </div>
-        </dialog>
+
+      {preview && (
+        <ImagePreview
+          images={[projects.find((p) => p.title === preview.title)!.imagePath]}
+          index={preview.index}
+          title={preview.title}
+          onClose={() => setPreview(null)}
+          onNavigate={() => {}}
+        />
       )}
     </section>
   );

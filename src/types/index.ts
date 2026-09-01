@@ -17,6 +17,8 @@ export type Experience = {
   role: string;
   dates: string;
   summary: string;
+  images?: string[];
+  imagesNotes?: string;
 };
 
 export type SkillGroup = {

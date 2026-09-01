@@ -2,7 +2,7 @@ import type { Link, SocialLink } from "../types";
 
 export const profile = {
   name: "Aqeel Fazlemawla Faslah",
-  role: "Information Systems graduate building full-stack apps and data-driven dashboards.",
+  role: "Information Systems Data Science graduate building full-stack apps and data-driven dashboards.",
   contactIntro:
     "Have a question, project idea, or just want to connect? Reach out through any of these placeholder channels.",
   links: [
