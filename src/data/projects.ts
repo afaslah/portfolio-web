@@ -6,7 +6,7 @@ export const projects: Project[] = [
   {
     title: "stella-crm",
     description:
-      "AI-powered multi-tenant CRM built with a team of 3, unifying customer service and field service management. I built the AI chatbot with tool calling for querying CRM data, a Random Forest model for smart ticket assignment, and the Midtrans payment integration.",
+      "Final-year thesis project, AI-powered multi-tenant CRM built with a team of 3, unifying customer service and field service management. I built the AI chatbot with tool calling for querying CRM data, a Random Forest model for smart ticket assignment, and the Midtrans payment integration.",
     tags: ["ASP.NET Core (.NET 10)", "React/Vite", "PostgreSQL", "Supabase"],
     links: [
       {
