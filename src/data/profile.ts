@@ -13,7 +13,7 @@ export const profile = {
       external: true,
     },
     { label: "WhatsApp", href: "https://wa.me/6289617820219", external: true },
-    { label: "CV", href: "/cv.pdf", external: true }, // public folder
+    { label: "CV", href: "/portfolio-web/cv.pdf", external: true }, // public folder
   ] satisfies Link[],
   email: "afaslah12@gmail.com",
   socialLinks: [
