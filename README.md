@@ -43,7 +43,6 @@ My contributions included:
 ### Development & Tools
 - Git
 - GitHub
-- Cloudflare
 
 ## Project Structure
 
