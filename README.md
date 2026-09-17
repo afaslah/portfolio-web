@@ -23,9 +23,9 @@ It includes:
 🌐 **Live Website:** https://capstone-crm.pages.dev/
 
 Login with: 
-admin@test.com
-12345678
-mcl
+- admin@test.com
+- 12345678
+- mcl
 
 A final-year thesis project developed in a team of 3.
 
