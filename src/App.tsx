@@ -11,8 +11,8 @@ function App() {
       <Header />
       <main className="mx-auto max-w-5xl px-5 sm:px-8">
         <Hero />
-        <Projects />
         <Experience />
+        <Projects />
         <Contact />
       </main>
       <Footer />

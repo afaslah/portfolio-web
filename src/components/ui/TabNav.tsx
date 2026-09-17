@@ -7,8 +7,8 @@ type Tab = {
 
 const tabs: Tab[] = [
   { id: "hero", label: "hero.tsx" },
-  { id: "projects", label: "projects.tsx" },
   { id: "experience", label: "experience.tsx" },
+  { id: "projects", label: "projects.tsx" },
   { id: "contact", label: "contact.tsx" },
 ];
 
