@@ -1,75 +1,56 @@
-# React + TypeScript + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal developer portfolio showcasing my experience, projects, technical skills, and education.
 
-Currently, two official plugins are available:
+🌐 **Live Website:** https://afaslah.github.io/portfolio-web/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## About
 
-## React Compiler
+This portfolio was created to showcase my background and experience in software development, data analytics, and machine learning.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+It includes:
 
-## Expanding the ESLint configuration
+- Professional experience from my IT internships
+- Academic and personal projects
+- Technical skills and technologies
+- Education background
+- Contact and professional links
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Featured Project
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### AI-Powered Multi-Tenant CRM
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+A final-year thesis project developed in a team of 3.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+The system is an AI-powered multi-tenant CRM designed to unify customer service and field service management.
 
-```
+My contributions included:
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+- Developing an AI chatbot with tool calling for querying CRM data
+- Developing a Random Forest model for smart ticket assignment
+- Integrating the Midtrans payment gateway
+- Contributing to frontend and backend development
+- Designing database structures and API integration
+- Working on system architecture and authentication
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Tech Stack
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Frontend
+- React
+- TypeScript
+- Vite
 
-```
+### Development & Tools
+- Git
+- GitHub
+- Cloudflare
+
+## Project Structure
+
+```text
+src/
+├── components/
+├── sections/
+├── assets/
+├── App.tsx
+└── main.tsx
