@@ -20,6 +20,8 @@ It includes:
 
 ### AI-Powered Multi-Tenant CRM
 
+🌐 **Live Website:** https://capstone-crm.pages.dev/
+
 A final-year thesis project developed in a team of 3.
 
 The system is an AI-powered multi-tenant CRM designed to unify customer service and field service management.
