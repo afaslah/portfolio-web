@@ -61,6 +61,13 @@ export function Projects() {
               <p className="max-w-prose text-sm leading-6 text-muted">
                 {project.description}
               </p>
+              {project.extraInfo && (
+                <div className="mt-4 font-mono text-xs text-muted">
+                  {project.extraInfo.map((info) => (
+                    <p key={info}>{info}</p>
+                  ))}
+                </div>
+              )}
               <p className="mt-4 font-mono text-xs text-muted">
                 // {project.tags.join(" / ")}
               </p>
