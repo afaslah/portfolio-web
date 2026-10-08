@@ -25,7 +25,7 @@ export const experience: Experience[] = [
   {
     company: "PT Teladan Prima Agro Tbk",
     role: "IT Intern — Dashboard & Digitalization",
-    dates: "Jan 2026 - Jul 2026",
+    dates: "Jan 2026 - Jul 2026 (6 Months)",
     summary:
       "Built Tableau dashboards from messy raw data and automated the manual transposition work with Python. Helped develop a Django-based fingerprint attendance system, fixing bugs and adding features like real-time sync. Also ran QA/UAT testing for a mobile and web employee management app.",
     images: [tpa_1, tpa_2, tpa_3, tpa_4],
@@ -34,7 +34,7 @@ export const experience: Experience[] = [
   {
     company: "PT. Mostrans Global Digilog",
     role: "IT Business Analyst Intern",
-    dates: "Aug 2025 - Dec 2025",
+    dates: "Aug 2025 - Dec 2025 (5 Months)",
     summary:
       "Built a commercial analytics dashboard with React, TypeScript, and GraphQL, replacing manual PowerPoint reporting with real-time revenue and logistics insights. Added interactive charts and filters with ApexCharts for performance analysis by shipper and region. Designed a star-schema data warehouse with ETL pipelines, cutting query execution time from seconds to under 300ms.",
     images: [mostrans_1, mostrans_2, mostrans_3],
