@@ -6,8 +6,22 @@ import tpa_4 from "../assets/images/tpa_4.webp";
 import mostrans_1 from "../assets/images/mostrans_1.webp";
 import mostrans_2 from "../assets/images/mostrans_2.webp";
 import mostrans_3 from "../assets/images/mostrans_3.webp";
+import daf_1 from "../assets/images/daf_admin_footer.webp";
+import daf_2 from "../assets/images/daf_admin_klien.webp";
+import daf_3 from "../assets/images/daf_admin_riwayat_proyek.webp";
+import daf_4 from "../assets/images/daf_klien_footer.webp";
+import daf_5 from "../assets/images/daf_riwayat_proyek.webp";
 
 export const experience: Experience[] = [
+  {
+    company: "PT Duta Andalan Fajar",
+    role: "IT Staff",
+    dates: "Oct 2026 - Now",
+    summary:
+      "Built an admin CMS that makes the company website fully editable, including footer settings, logo settings, and project history, with validated image uploads and convert them to WebP, access control, and content connected directly to the public pages",
+    images: [daf_1, daf_2, daf_3, daf_4, daf_5],
+    imagesNotes:"https://dutaclean.co.id/",
+  },
   {
     company: "PT Teladan Prima Agro Tbk",
     role: "IT Intern — Dashboard & Digitalization",
