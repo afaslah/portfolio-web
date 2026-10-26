@@ -15,7 +15,7 @@ import daf_5 from "../assets/images/daf_riwayat_proyek.webp";
 export const experience: Experience[] = [
   {
     company: "PT Duta Andalan Fajar",
-    role: "IT Staff",
+    role: "IT Staff Intern",
     dates: "Oct 2026 - Now",
     summary:
       "Built an admin CMS that makes the company website fully editable, including footer settings, logo settings, and project history, with validated image uploads and convert them to WebP, access control, and content connected directly to the public pages",
