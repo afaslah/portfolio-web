@@ -72,7 +72,7 @@ export function Projects() {
                 // {project.tags.join(" / ")}
               </p>
               <div className="mt-auto flex flex-wrap gap-x-5 gap-y-2 pt-5">
-                {project.links.map((link) => (
+                {project.links?.map((link) => (
                   <a
                     key={link.label}
                     className="text-sm text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"

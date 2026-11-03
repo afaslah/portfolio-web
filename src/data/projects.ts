@@ -1,7 +1,7 @@
 import type { Project } from "../types";
 import academicProjectImage from "../assets/images/academic-project.webp";
 import stellaCrmImage from "../assets/images/stella-crm.webp";
-import onePlatformHris from "../assets/images/one-platform-hris.webp";
+import onePlatformHris from "../assets/images/one_platform_hris.webp";
 
 export const projects: Project[] = [
   {
