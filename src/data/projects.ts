@@ -1,18 +1,19 @@
 import type { Project } from "../types";
 import academicProjectImage from "../assets/images/academic-project.webp";
 import stellaCrmImage from "../assets/images/stella-crm.webp";
+import onePlatformHris from "../assets/images/one-platform-hris.webp";
 
 export const projects: Project[] = [
   {
     title: "stella-crm",
     description:
       "Final-year thesis project, AI-powered multi-tenant CRM built with a team of 3, unifying customer service and field service management. I built the AI chatbot with tool calling for querying CRM data, a Random Forest model for smart ticket assignment, and the Midtrans payment integration.",
-      extraInfo: [
-        "Login With:",
-        "Email: admin@test.com",
-        "Password: 12345678",
-        "Company Id: mcl"
-      ],
+    extraInfo: [
+      "Login With:",
+      "Email: admin@test.com",
+      "Password: 12345678",
+      "Company Id: mcl",
+    ],
     tags: ["ASP.NET Core (.NET 10)", "React/Vite", "PostgreSQL", "Supabase"],
     links: [
       {
@@ -32,6 +33,20 @@ export const projects: Project[] = [
       },
     ],
     imagePath: stellaCrmImage,
+  },
+  {
+    title: "one-platform-hris",
+    description:
+      "Multi-tenant HRIS platform with a CMS and mobile app, built as part of a development team. I designed much of the PostgreSQL/Prisma schema and built the REST API endpoints and CMS features for the overtime, reimbursement, attendance request, shift scheduling, and leave modules, including multi-step approval workflows with role-based permissions, GPS-validated attendance, and overtime pay calculation under Indonesian labor rules.",
+    tags: ["Next.js", "TypeScript", "TailwindCSS", "PostgreSQL", "Prisma ORM"],
+    // links: [
+    //   {
+    //     label: "Currently on progress",
+    //     href: "https://capstone-crm.pages.dev/",
+    //     external: true,
+    //   },
+    // ],
+    imagePath: onePlatformHris,
   },
   {
     title: "academic-scheduling",
