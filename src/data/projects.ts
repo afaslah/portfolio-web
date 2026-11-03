@@ -35,7 +35,7 @@ export const projects: Project[] = [
     imagePath: stellaCrmImage,
   },
   {
-    title: "one-platform-hris",
+    title: "one-platform-hris (on-progress)",
     description:
       "Multi-tenant HRIS platform with a CMS and mobile app, built as part of a development team. I designed much of the PostgreSQL/Prisma schema and built the REST API endpoints and CMS features for the overtime, reimbursement, attendance request, shift scheduling, and leave modules, including multi-step approval workflows with role-based permissions, GPS-validated attendance, and overtime pay calculation under Indonesian labor rules.",
     tags: ["Next.js", "TypeScript", "TailwindCSS", "PostgreSQL", "Prisma ORM"],
